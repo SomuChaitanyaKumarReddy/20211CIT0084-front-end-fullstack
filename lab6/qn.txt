@@ -1,0 +1,10 @@
+Create an online student registration page for Presidency University. Registration page should contain following fields in the specified format and develop the JavaScript validation Code as per the conditions specified for each field.
+a.	First name (should not empty, Name should contain only alphabets and the length should not be less than 6 characters)
+b.	Last name (only alphabets should be entered)
+c.	Email id (should not contain any invalid and must follow the standard pattern name@domain.com)
+d.	Password (Password should not be less than 6 characters length and enter only numbers, letters)
+e.	Address (should not be empty)
+f.	Mobile Number (Phone number should contain 10 digits only and it should accept only numbers)
+g.	Gender
+h.	Submit and cancel button
+Data entry for all the fields are mandatory as per validation conditions and if any of the condition is not specified appropriate alert Message should be displayed or on successful entry of all the fields the student should get the alert message “Registration done successfully”.

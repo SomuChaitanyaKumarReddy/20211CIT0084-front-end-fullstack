@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: greenyellow;
+        }
+        .order-placed {
+            position: relative;
+            top: 350px;
+         font-size: 20px;
+        text-align: center;
+        animation: order-placed-animation 1s ease-in-out infinite;
+}
+button{
+    position: relative;
+            top: 370px;
+            left: 710px;
+         font-size: 20px;
+         border: 1px solid #000;
+         border-radius: 10px;
+         color: #000;
+         width: 100px;
+         height: 50px;
+    transition: 1s;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: #000;
+    color: aliceblue;
+    transition: 1s;
+}
+
+@keyframes order-placed-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="order-placed">
+        Order Confirmed! 
+      </div>
+      <a href="index.html"><button >go back</button></a>
+</body>
+</html>
