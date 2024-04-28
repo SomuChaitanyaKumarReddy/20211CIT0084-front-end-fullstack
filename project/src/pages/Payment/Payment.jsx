@@ -32,7 +32,7 @@ const Payment = () => {
         })}
       </div>
       <div className="payment-cart-total cart-total">
-          <div>
+          {/* <div>
             <div className="payment-cart-total-details cart-total-details">
               <p>Subtotal</p>
               <p>${getTotalCartAmount()}</p>
@@ -45,6 +45,28 @@ const Payment = () => {
             <div className="payment-cart-total-details cart-total-details">
               <b>Total</b>
               <b>${getTotalCartAmount()===0?0:getTotalCartAmount()+2}</b>
+            </div>
+          </div> */}
+          <div>
+            <div className="cart-total-details">
+              <p>Subtotal</p>
+              <p>${getTotalCartAmount()}</p>
+            </div>
+            <hr />
+            <div className="cart-total-details">
+              <p>Tax (10%)</p>
+              <p>${ getTotalCartAmount()===0?0:getTotalCartAmount()*0.1}</p>
+            </div>
+            <hr />
+            <div className="cart-total-details">
+              <p>Delivery Fee</p>
+              <p>${ getTotalCartAmount()===0?0:2}</p>
+            </div>
+            <hr />
+            
+            <div className="cart-total-details">
+              <b>Total</b>
+              <b>${getTotalCartAmount()===0?0:getTotalCartAmount()+getTotalCartAmount()*0.1+2}</b>
             </div>
           </div>
         </div>

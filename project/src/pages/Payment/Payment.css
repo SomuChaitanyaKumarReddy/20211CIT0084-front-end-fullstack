@@ -93,7 +93,7 @@ hr{
     color: #029720;
 }
 .payment-cart-total{
-    margin-top: 10px;
+    margin-top: -20px;
 }
 .payment-cart-total-details p{
     font-size: 18px;
